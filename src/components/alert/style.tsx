@@ -1,24 +1,20 @@
 import styled from "styled-components";
 import { animated } from "react-spring";
 
-export const AlertBoxLeft = styled.div`
+const AlertBox = styled.div`
   position: absolute;
   top: 0;
-  left: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 `;
 
-export const AlertBoxRight = styled.div`
-  position: absolute;
-  top: 0;
+export const AlertBoxLeft = styled(AlertBox)`
+  left: 0;
+`;
+export const AlertBoxRight = styled(AlertBox)`
   right: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 `;
 
 export const NotificationWrapper = styled(animated.div)`
@@ -57,6 +53,6 @@ export const NotificationWrapper = styled(animated.div)`
     height: 100%;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    background-color: #1d72f3;
+    background-color: rgb(0, 140, 186);
   }
 `;

@@ -13,11 +13,11 @@ export const Form = styled.form`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 10px;
-  background: rgb(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+  background: rgb(255, 255, 255, 1);
+  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   color: rgba(42, 42, 42, 1);
-  border: 1px solid rgba(0, 90, 158, 1);
+
   input {
     padding: 5px;
     border: rgba(210, 210, 210, 1) solid 1px;
@@ -49,14 +49,10 @@ export const Form = styled.form`
     grid-row: 3;
   }
   .fifth {
-    grid-column: 1/2;
+    grid-column: 1/3;
     grid-row: 4;
   }
   .sixth {
-    grid-column: 2/3;
-    grid-row: 4;
-  }
-  .seventh {
     grid-column: 1/3;
     grid-row: 5;
     color: red;

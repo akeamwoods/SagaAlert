@@ -86,7 +86,7 @@ function App() {
             </span>
           </span>
           <span className="fourth">
-            <label>Duration</label>
+            <label>Duration (ms)</label>
             <input
               disabled={!durationAllowed}
               value={duration}
@@ -95,17 +95,6 @@ function App() {
             ></input>
           </span>
           <span className="fifth">
-            <label>Alert Type</label>
-            {/* <select
-              value={alertTypes[typeIndex]}
-              onChange={e => setAlertIndex(e.target.selectedIndex)}
-            >
-              {positions.map(key => (
-                <option value={key}>{AlertPosition[key as any]}</option>
-              ))}
-            </select> */}
-          </span>
-          <span className="sixth">
             <label>Position</label>
             <select
               value={positions[position]}
@@ -117,7 +106,7 @@ function App() {
             </select>
           </span>
           {!durationAllowed && !dismissible && (
-            <span className="seventh">
+            <span className="sixth">
               <p>Expires or Dismissible must be allowed.</p>
             </span>
           )}

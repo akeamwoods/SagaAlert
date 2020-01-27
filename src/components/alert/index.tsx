@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTimesCircle, FaTrash } from "react-icons/fa";
+import { FaTimesCircle, FaExclamationTriangle } from "react-icons/fa";
 import { NotificationWrapper } from "./style";
 
 export const Notification: React.FC<{
@@ -16,7 +16,7 @@ export const Notification: React.FC<{
           <FaTimesCircle size="16" />
         </button>
       ) : null}
-      <FaTrash size="16" />
+      <FaExclamationTriangle size="16" />
       <div
         style={{ display: "flex", flexDirection: "column", marginLeft: "15px" }}
       >
