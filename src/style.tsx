@@ -9,7 +9,14 @@ export const FormWrapper = styled.form`
 `;
 
 export const Form = styled.form`
+  padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+  background: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  input {
+    padding: 5px;
+  }
 `;

@@ -23,8 +23,8 @@ function App() {
   const [position, setIndex] = useState(0);
 
   useEffect(() => {
-    setTitle("");
-    setMessage("");
+    setTitle("Title");
+    setMessage("Message");
     setDurationAllowed(true);
     setDuration(5000);
     setDismissible(true);
@@ -88,7 +88,11 @@ function App() {
             ))}
           </select>
           <label></label>
-          <button type="button" onClick={onSubmit}>
+          <button
+            type="button"
+            onClick={onSubmit}
+            disabled={!durationAllowed && !dismissible}
+          >
             Create
           </button>
         </Form>
