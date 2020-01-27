@@ -1,9 +1,18 @@
 import { ActionType, createAction } from "typesafe-actions";
+import { Alert } from ".";
 
-const actionOne = createAction("action description")<void>();
+const alertCreated = createAction("alert created")<Alert>();
+const alertDisplayed = createAction("alert displayed")<Alert>();
+const alertCancelButtonClicked = createAction("alert cancel button clicked")<
+  string
+>();
+const alertCleared = createAction("alert cleared")<string>();
 
 export const actions = {
-  actionOne
+  alertCreated,
+  alertDisplayed,
+  alertCancelButtonClicked,
+  alertCleared
 };
 
 export type Actions = ActionType<typeof actions>;

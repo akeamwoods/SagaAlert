@@ -7,8 +7,15 @@ import produce from "immer";
 import { getType } from "typesafe-actions";
 import { rootSaga } from "./rootSaga";
 
+export type Alert = {
+  id: string;
+  duration: number;
+  title: string;
+  message: string;
+};
+
 const initialState = () => ({
-  initArray: [] as string[]
+  alerts: [] as Alert[]
 });
 
 export type State = Readonly<ReturnType<typeof initialState>>;
@@ -19,7 +26,13 @@ export const rootReducer: Reducer<State, Actions> = (
 ) =>
   produce(state, draft => {
     switch (action.type) {
-      case getType(actions.actionOne):
+      case getType(actions.alertDisplayed):
+        draft.alerts = [...draft.alerts, action.payload];
+        break;
+      case getType(actions.alertCleared):
+        draft.alerts = draft.alerts.filter(
+          alert => alert.id !== action.payload
+        );
         break;
     }
   });

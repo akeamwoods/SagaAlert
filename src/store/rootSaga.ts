@@ -1,8 +1,8 @@
 import { getType } from "typesafe-actions";
-import { all, takeLatest } from "@redux-saga/core/effects";
+import { all, takeEvery } from "@redux-saga/core/effects";
 import { actions } from "./actions";
-import { exampleSaga } from "./saga";
+import { addAlertSaga } from "./saga";
 
 export function* rootSaga() {
-  yield all([takeLatest(getType(actions.actionOne), exampleSaga)]);
+  yield all([takeEvery(getType(actions.alertCreated), addAlertSaga)]);
 }

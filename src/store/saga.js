@@ -1,6 +1,18 @@
-export function* exampleSaga({ payload }) {
+function* cancellationSaga(id) {
+  while (true) {
+    const { payload } = yield take(actions.alertCancelButtonClicked);
+    if (id === payload) return;
+  }
+}
+
+export function* addAlertSaga({ payload }) {
   try {
-    yield console.log("hi");
+    yield put(actions.alertDisplayed(payload));
+    yield race({
+      delay: delay(payload.duration),
+      click: cancellationSaga(payload.id)
+    });
+    yield put(actions.alertCleared(payload.id));
   } catch (error) {
     console.log(error);
   }
