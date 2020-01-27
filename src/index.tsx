@@ -38,7 +38,7 @@ function App() {
           id: uuid.v4(),
           title,
           message,
-          duration,
+          duration: durationAllowed ? duration : undefined,
           dismissible,
           position
         })
@@ -53,40 +53,56 @@ function App() {
       <NotificationContainer />
       <FormWrapper>
         <Form>
-          <label>Title</label>
-          <input value={title} onChange={e => setTitle(e.target.value)}></input>
-          <label>Message</label>
-          <input
-            value={message}
-            onChange={e => setMessage(e.target.value)}
-          ></input>
-          <label>Duration?</label>
-          <input
-            checked={durationAllowed}
-            onChange={() => setDurationAllowed(!durationAllowed)}
-            type="checkbox"
-          ></input>
-          <label>Duration Length</label>
-          <input
-            value={duration}
-            onChange={e => setDuration(Number(e.target.value))}
-            type="number"
-          ></input>
-          <label>Dismissible?</label>
-          <input
-            checked={dismissible}
-            onChange={() => setDismissible(!dismissible)}
-            type="checkbox"
-          ></input>
-          <label>Position</label>
-          <select
-            value={positions[position]}
-            onChange={e => setIndex(e.target.selectedIndex)}
-          >
-            {positions.map(key => (
-              <option value={key}>{AlertPosition[key as any]}</option>
-            ))}
-          </select>
+          <span className="first">
+            <label>Title</label>
+            <input
+              value={title}
+              onChange={e => setTitle(e.target.value)}
+            ></input>
+          </span>
+          <span className="second">
+            <label>Message</label>
+            <input
+              value={message}
+              onChange={e => setMessage(e.target.value)}
+            ></input>
+          </span>
+          <span className="third">
+            <label>Expires?</label>
+            <input
+              checked={durationAllowed}
+              onChange={() => setDurationAllowed(!durationAllowed)}
+              type="checkbox"
+            ></input>
+          </span>
+          <span className="fourth">
+            <label>Duration</label>
+            <input
+              disabled={!durationAllowed}
+              value={duration}
+              onChange={e => setDuration(Number(e.target.value))}
+              type="number"
+            ></input>
+          </span>
+          <span className="fifth">
+            <label>Dismissible?</label>
+            <input
+              checked={dismissible}
+              onChange={() => setDismissible(!dismissible)}
+              type="checkbox"
+            ></input>
+          </span>
+          <span className="sixth">
+            <label>Position</label>
+            <select
+              value={positions[position]}
+              onChange={e => setIndex(e.target.selectedIndex)}
+            >
+              {positions.map(key => (
+                <option value={key}>{AlertPosition[key as any]}</option>
+              ))}
+            </select>
+          </span>
           <label></label>
           <button
             type="button"
