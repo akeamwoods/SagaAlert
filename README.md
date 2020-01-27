@@ -45,5 +45,17 @@ export function* rootSaga() {
 }
 ```
 
-This creates a generator function which always listens for the alertCreated action to be dispatched. Then we simply need code in the reducer itself to add our alert to state/remove it. 
+This creates a generator function which always listens for the alertCreated action to be dispatched. Then we simply need code in the reducer itself to add our alert to state/remove it:
 
+```typescript
+switch (action.type) {
+      case getType(actions.alertDisplayed):
+        draft.alerts = [...draft.alerts, action.payload];
+        break;
+      case getType(actions.alertCleared):
+        draft.alerts = draft.alerts.filter(
+          alert => alert.id !== action.payload
+        );
+        break;
+    }
+```
