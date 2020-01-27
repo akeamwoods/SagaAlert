@@ -56,4 +56,10 @@ export const Form = styled.form`
     grid-column: 2/3;
     grid-row: 4;
   }
+  .seventh {
+    grid-column: 1/3;
+    grid-row: 5;
+    color: red;
+    text-align: center;
+  }
 `;

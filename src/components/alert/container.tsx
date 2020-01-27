@@ -28,7 +28,7 @@ export const NotificationContainer = () => {
               key={key}
               title={item.title}
               message={item.message}
-              clickable
+              clickable={item.dismissible}
               onClick={() =>
                 dispatch(actions.alertCancelButtonClicked(item.id))
               }
@@ -44,7 +44,7 @@ export const NotificationContainer = () => {
               key={key}
               title={item.title}
               message={item.message}
-              clickable
+              clickable={item.dismissible}
               onClick={() =>
                 dispatch(actions.alertCancelButtonClicked(item.id))
               }

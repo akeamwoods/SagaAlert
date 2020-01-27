@@ -116,7 +116,13 @@ function App() {
               ))}
             </select>
           </span>
+          {!durationAllowed && !dismissible && (
+            <span className="seventh">
+              <p>Expires or Dismissible must be allowed.</p>
+            </span>
+          )}
           <label></label>
+
           <button
             type="button"
             onClick={onSubmit}
