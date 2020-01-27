@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SagaAlert/static/css/main.d81bedd6.chunk.css",
+    "main.js": "/SagaAlert/static/js/main.82d90e93.chunk.js",
+    "main.js.map": "/SagaAlert/static/js/main.82d90e93.chunk.js.map",
+    "runtime-main.js": "/SagaAlert/static/js/runtime-main.ade5b841.js",
+    "runtime-main.js.map": "/SagaAlert/static/js/runtime-main.ade5b841.js.map",
+    "static/js/2.be32437c.chunk.js": "/SagaAlert/static/js/2.be32437c.chunk.js",
+    "static/js/2.be32437c.chunk.js.map": "/SagaAlert/static/js/2.be32437c.chunk.js.map",
+    "index.html": "/SagaAlert/index.html",
+    "precache-manifest.f5732e359539a3c4e1b238fd00f50920.js": "/SagaAlert/precache-manifest.f5732e359539a3c4e1b238fd00f50920.js",
+    "service-worker.js": "/SagaAlert/service-worker.js",
+    "static/css/main.d81bedd6.chunk.css.map": "/SagaAlert/static/css/main.d81bedd6.chunk.css.map",
+    "static/js/2.be32437c.chunk.js.LICENSE": "/SagaAlert/static/js/2.be32437c.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ade5b841.js",
+    "static/js/2.be32437c.chunk.js",
+    "static/css/main.d81bedd6.chunk.css",
+    "static/js/main.82d90e93.chunk.js"
+  ]
+}
