@@ -7,14 +7,28 @@ import produce from "immer";
 import { getType } from "typesafe-actions";
 import { rootSaga } from "./rootSaga";
 
+export enum AlertPosition {
+  topRight,
+  topLeft,
+  bottomRight,
+  bottomLeft,
+  center
+}
 export type Alert = {
   id: string;
-  duration: number;
   title: string;
   message: string;
+  duration: number | undefined;
+  dismissible: boolean;
+  position: AlertPosition;
 };
 
 const initialState = () => ({
+  title: "",
+  message: "",
+  duration: undefined as undefined | number,
+  dismissible: true,
+  position: AlertPosition.topRight as AlertPosition,
   alerts: [] as Alert[]
 });
 
