@@ -68,12 +68,22 @@ function App() {
             ></input>
           </span>
           <span className="third">
-            <label>Expires?</label>
-            <input
-              checked={durationAllowed}
-              onChange={() => setDurationAllowed(!durationAllowed)}
-              type="checkbox"
-            ></input>
+            <span>
+              <label>Expires?</label>
+              <input
+                checked={durationAllowed}
+                onChange={() => setDurationAllowed(!durationAllowed)}
+                type="checkbox"
+              ></input>
+            </span>
+            <span>
+              <label>Dismissible?</label>
+              <input
+                checked={dismissible}
+                onChange={() => setDismissible(!dismissible)}
+                type="checkbox"
+              ></input>
+            </span>
           </span>
           <span className="fourth">
             <label>Duration</label>
@@ -85,12 +95,15 @@ function App() {
             ></input>
           </span>
           <span className="fifth">
-            <label>Dismissible?</label>
-            <input
-              checked={dismissible}
-              onChange={() => setDismissible(!dismissible)}
-              type="checkbox"
-            ></input>
+            <label>Alert Type</label>
+            {/* <select
+              value={alertTypes[typeIndex]}
+              onChange={e => setAlertIndex(e.target.selectedIndex)}
+            >
+              {positions.map(key => (
+                <option value={key}>{AlertPosition[key as any]}</option>
+              ))}
+            </select> */}
           </span>
           <span className="sixth">
             <label>Position</label>

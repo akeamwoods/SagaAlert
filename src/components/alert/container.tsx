@@ -4,7 +4,7 @@ import { useTypedSelector } from "../../store";
 import { Notification } from ".";
 import { actions } from "../../store/actions";
 import { useTransition } from "react-spring";
-import { AlertBox } from "./style";
+import { AlertBoxLeft, AlertBoxRight } from "./style";
 
 export const NotificationContainer = () => {
   const dispatch = useDispatch();
@@ -18,17 +18,39 @@ export const NotificationContainer = () => {
   });
 
   return (
-    <AlertBox>
-      {transition.map(({ item, props, key }) => (
-        <Notification
-          style={props}
-          key={key}
-          title={item.title}
-          message={item.message}
-          clickable
-          onClick={() => dispatch(actions.alertCancelButtonClicked(item.id))}
-        />
-      ))}
-    </AlertBox>
+    <>
+      <AlertBoxLeft>
+        {transition
+          .filter(e => e.item.position === 1)
+          .map(({ item, props, key }) => (
+            <Notification
+              style={props}
+              key={key}
+              title={item.title}
+              message={item.message}
+              clickable
+              onClick={() =>
+                dispatch(actions.alertCancelButtonClicked(item.id))
+              }
+            />
+          ))}
+      </AlertBoxLeft>
+      <AlertBoxRight>
+        {transition
+          .filter(e => e.item.position === 0)
+          .map(({ item, props, key }) => (
+            <Notification
+              style={props}
+              key={key}
+              title={item.title}
+              message={item.message}
+              clickable
+              onClick={() =>
+                dispatch(actions.alertCancelButtonClicked(item.id))
+              }
+            />
+          ))}
+      </AlertBoxRight>
+    </>
   );
 };

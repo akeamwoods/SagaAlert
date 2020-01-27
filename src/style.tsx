@@ -38,6 +38,11 @@ export const Form = styled.form`
   .third {
     grid-column: 1/2;
     grid-row: 3;
+    justify-content: space-between;
+    span {
+      flex-direction: row;
+      align-items: flex-end;
+    }
   }
   .fourth {
     grid-column: 2/3;

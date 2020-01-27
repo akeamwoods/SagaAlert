@@ -1,7 +1,17 @@
 import styled from "styled-components";
 import { animated } from "react-spring";
 
-export const AlertBox = styled.div`
+export const AlertBoxLeft = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+export const AlertBoxRight = styled.div`
   position: absolute;
   top: 0;
   right: 0;

@@ -8,11 +8,8 @@ import { getType } from "typesafe-actions";
 import { rootSaga } from "./rootSaga";
 
 export enum AlertPosition {
-  topRight,
-  topLeft,
-  bottomRight,
-  bottomLeft,
-  center
+  right = 0,
+  left = 1
 }
 export type Alert = {
   id: string;
@@ -28,7 +25,7 @@ const initialState = () => ({
   message: "",
   duration: undefined as undefined | number,
   dismissible: true,
-  position: AlertPosition.topRight as AlertPosition,
+  position: AlertPosition.right as AlertPosition,
   alerts: [] as Alert[]
 });
 

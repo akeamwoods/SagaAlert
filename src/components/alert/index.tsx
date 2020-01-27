@@ -1,5 +1,4 @@
 import React from "react";
-
 import { FaTimesCircle, FaTrash } from "react-icons/fa";
 import { NotificationWrapper } from "./style";
 
