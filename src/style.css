@@ -9,4 +9,5 @@ body,
 body {
   background: linear-gradient(#4e54c8, #8f94fb);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
 }
