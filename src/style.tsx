@@ -16,7 +16,10 @@ export const Form = styled.form`
   background: rgb(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
   border-radius: 5px;
+  color: rgba(42, 42, 42, 1);
+  border: 1px solid rgba(0, 90, 158, 0.5);
   input {
     padding: 5px;
+    border: rgba(210, 210, 210, 1) solid 1px;
   }
 `;
