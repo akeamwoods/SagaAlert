@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/style.css"],"names":[],"mappings":"AAAA,qBAIE,QAAS,CACT,WACF,CAEA,KACE,sCAAyC,CACzC,cAAgB,CAChB,kBACF","file":"main.05cf8270.chunk.css","sourcesContent":["html,\nbody,\n.App,\n#root {\n  margin: 0;\n  height: 100%;\n}\n\nbody {\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 0.8em;\n  background:#fafafa;\n}\n"]}
