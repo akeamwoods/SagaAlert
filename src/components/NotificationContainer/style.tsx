@@ -22,4 +22,5 @@ export const AlertBoxRight = styled(AlertBox)`
 
 export const AlertWrapper = styled(animated.div)`
   margin-bottom: 5px;
+  z-index: 2;
 `;
