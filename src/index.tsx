@@ -22,6 +22,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import { Controller, useForm } from "react-hook-form";
+import NotificationImportantIcon from "@material-ui/icons/NotificationImportant";
 
 type Inputs = {
   title: string;
@@ -74,6 +75,7 @@ function App() {
         <NotificationContainer />
         <Box margin="20px">
           <Typography variant="h3" align="center" component="h1" gutterBottom>
+            <NotificationImportantIcon fontSize="large" color="primary" />
             SagaAlert
           </Typography>
           <Typography paragraph gutterBottom>
