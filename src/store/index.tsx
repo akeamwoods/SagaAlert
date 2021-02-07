@@ -6,19 +6,7 @@ import createSagaMiddleware from "redux-saga";
 import produce from "immer";
 import { getType } from "typesafe-actions";
 import { rootSaga } from "./rootSaga";
-
-export enum AlertPosition {
-  Right = 0,
-  Left = 1,
-}
-export type Alert = {
-  id: string;
-  title: string;
-  message: string;
-  duration: number | undefined;
-  dismissible: boolean;
-  position: AlertPosition;
-};
+import { Alert } from "./types";
 
 const initialState = () => ({
   alerts: [] as Alert[],

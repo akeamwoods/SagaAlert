@@ -341,9 +341,14 @@
         "signature": "c70e9ede62af1b7cea62fe0b63ecd6dbfa574a100e8b7ea358715e726a5162e5",
         "affectsGlobalScope": false
       },
+      "./src/store/types.ts": {
+        "version": "a0b114020f47da614a6182bfbd38188dea1f310bc25690eaf47a7a60602f051a",
+        "signature": "e8bf20770739159a5d3f7aa671da9709a80af0e03e344f2b3f55b20b32bb40b1",
+        "affectsGlobalScope": false
+      },
       "./src/store/actions.ts": {
-        "version": "81dd587265b1e73528a0e762db708e0946247de420915fe8d2a2e5a9081488fb",
-        "signature": "405f61b777e876653ec4f08e1ca7a2d2585f5f78f2b99a42c13a1cfd0a8cbacc",
+        "version": "920479b5c0965c983ff601cc0e2e6f6e55b34e606cb966b99faa1aa80c20c266",
+        "signature": "a19b5a094258600099ab00074f38b456e8cf473c4421a5b9c3bbd34d044f9524",
         "affectsGlobalScope": false
       },
       "./node_modules/redux-devtools-extension/index.d.ts": {
@@ -483,7 +488,7 @@
       },
       "./src/store/saga.js": {
         "version": "326d08296fde41c056a8cb12a3d91c51ad27e8c6783e4b4c92b5586d54900864",
-        "signature": "0fac59be4bf8d2821179e52f75298c5412c755cb2e367b4dc78d13205d166d73",
+        "signature": "01d3260a5379f439fbbb0d920257df28f016fb9b8b822ded95445e460afc3049",
         "affectsGlobalScope": false
       },
       "./src/store/rootsaga.ts": {
@@ -492,23 +497,8 @@
         "affectsGlobalScope": false
       },
       "./src/store/index.tsx": {
-        "version": "80161aa2bfe32d775ff6e099245eae66fc4cc98153aec076cd373236da24e792",
-        "signature": "a1bf632218fa0e9f82bcc5bc475d82365120e9c94d86d1aa5ae385aafa3a4976",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/uuid/index.d.ts": {
-        "version": "96b49a9de749afcf92b5bce1d8cc42cfae6816cdf5ea36584fd9256b8b2e5292",
-        "signature": "96b49a9de749afcf92b5bce1d8cc42cfae6816cdf5ea36584fd9256b8b2e5292",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/styled-components/index.d.ts": {
-        "version": "6839e1779e1f61e0ed62b1ca3ff7e74dc70479a5455077a38434d0e404103c28",
-        "signature": "6839e1779e1f61e0ed62b1ca3ff7e74dc70479a5455077a38434d0e404103c28",
-        "affectsGlobalScope": true
-      },
-      "./src/style.tsx": {
-        "version": "dcdbc1dcc32eda20b774e701f0c842d3696652e878ac1d5f274e2a544c3fe262",
-        "signature": "1739844a040c3e0c996502ab75b97b571cce9a25c8741bc6f63b4c29b105d801",
+        "version": "2f7c6c05767f25601b5151bd064813cbaa484f6131600b3f51eacaa73e5d47bb",
+        "signature": "7198c7356e61e1a94871bfded587c0c7cb78dd28683d24b4f87ab0fe8aa27880",
         "affectsGlobalScope": false
       },
       "./node_modules/@material-ui/types/index.d.ts": {
@@ -2551,6 +2541,11 @@
         "signature": "4bf7edd52156baed67e227b7a669af33d5e28db059dd01347f56edf0249dd27f",
         "affectsGlobalScope": false
       },
+      "./node_modules/@types/styled-components/index.d.ts": {
+        "version": "6839e1779e1f61e0ed62b1ca3ff7e74dc70479a5455077a38434d0e404103c28",
+        "signature": "6839e1779e1f61e0ed62b1ca3ff7e74dc70479a5455077a38434d0e404103c28",
+        "affectsGlobalScope": true
+      },
       "./node_modules/react-spring/renderprops-universal.d.ts": {
         "version": "fc47ab9db3b65223b5020522ae471428a1de379444ebfcd7c9e06719b7fc0b7b",
         "signature": "fc47ab9db3b65223b5020522ae471428a1de379444ebfcd7c9e06719b7fc0b7b",
@@ -2577,8 +2572,18 @@
         "affectsGlobalScope": false
       },
       "./src/components/notificationcontainer/index.tsx": {
-        "version": "09bf6e81b77892f4ba7e0800c21dcff7ae38be4493faab89104b3da18d1db154",
+        "version": "2847a4650f820057ec87a966c9e277cee4a318d0752904f05b573ca517f8a152",
         "signature": "7e3d06fcc233df553d9490508cab5f6a71e851e27b4b21d3daf1c9479f97fe69",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@material-ui/icons/notificationimportant.d.ts": {
+        "version": "865950dbe055cab1e6850f12d921894f46972e039f3f557791d77a214eb4d090",
+        "signature": "865950dbe055cab1e6850f12d921894f46972e039f3f557791d77a214eb4d090",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/uuid/index.d.ts": {
+        "version": "96b49a9de749afcf92b5bce1d8cc42cfae6816cdf5ea36584fd9256b8b2e5292",
+        "signature": "96b49a9de749afcf92b5bce1d8cc42cfae6816cdf5ea36584fd9256b8b2e5292",
         "affectsGlobalScope": false
       },
       "./node_modules/react-hook-form/dist/types/utils.d.ts": {
@@ -2686,13 +2691,18 @@
         "signature": "ca9802c57dbcf45671347ac261a8978e98843dbcec8e58bfef1a00c171b47338",
         "affectsGlobalScope": false
       },
-      "./node_modules/@material-ui/icons/notificationimportant.d.ts": {
-        "version": "865950dbe055cab1e6850f12d921894f46972e039f3f557791d77a214eb4d090",
-        "signature": "865950dbe055cab1e6850f12d921894f46972e039f3f557791d77a214eb4d090",
+      "./src/components/form/style.ts": {
+        "version": "ff71905dd02dd52c0ad4de601fe291d07e701a4e262ef1bcfe8b029d04e1890e",
+        "signature": "41cd82ddba0d580b8ba932754ce4bd73afbaf3e73ae1781778f89405e713ceff",
+        "affectsGlobalScope": false
+      },
+      "./src/components/form/index.tsx": {
+        "version": "d8c2e9a2bbd116eda973d856225557b36f904daf7cd2790c83407ab38e1c8498",
+        "signature": "3ea03a36befaac485299a7fe828c225d855d4f8f99f792b7836fe2449edee23d",
         "affectsGlobalScope": false
       },
       "./src/index.tsx": {
-        "version": "c686ced0d92e91922f50ef4dfcbf4c9b4ac7f6d5964ebdbe06a1c6624a144195",
+        "version": "03d3ab578bfdc240ba9709677f27dec33ee47772b6d96228cfd777ff0e3ccf77",
         "signature": "927af711ffc28e1b03e5183a90b6a8266e79950504a4d94cc3c58c3c4256422a",
         "affectsGlobalScope": false
       },
@@ -5679,6 +5689,22 @@
       "./node_modules/typescript-tuple/lib/utils.d.ts": [
         "./node_modules/typescript-compare/index.d.ts"
       ],
+      "./src/components/form/index.tsx": [
+        "./node_modules/@material-ui/core/index.d.ts",
+        "./node_modules/@material-ui/lab/index.d.ts",
+        "./node_modules/@types/react-redux/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./node_modules/@types/react/jsx-runtime.d.ts",
+        "./node_modules/@types/uuid/index.d.ts",
+        "./node_modules/react-hook-form/dist/index.d.ts",
+        "./src/components/form/style.ts",
+        "./src/store/actions.ts",
+        "./src/store/types.ts"
+      ],
+      "./src/components/form/style.ts": [
+        "./node_modules/@types/react/jsx-runtime.d.ts",
+        "./node_modules/@types/styled-components/index.d.ts"
+      ],
       "./src/components/notificationcontainer/index.tsx": [
         "./node_modules/@material-ui/core/iconbutton/index.d.ts",
         "./node_modules/@material-ui/icons/close.d.ts",
@@ -5689,7 +5715,8 @@
         "./node_modules/react-spring/web.cjs.d.ts",
         "./src/components/notificationcontainer/style.tsx",
         "./src/store/actions.ts",
-        "./src/store/index.tsx"
+        "./src/store/index.tsx",
+        "./src/store/types.ts"
       ],
       "./src/components/notificationcontainer/style.tsx": [
         "./node_modules/@types/react/jsx-runtime.d.ts",
@@ -5703,12 +5730,9 @@
         "./node_modules/@types/react-redux/index.d.ts",
         "./node_modules/@types/react/index.d.ts",
         "./node_modules/@types/react/jsx-runtime.d.ts",
-        "./node_modules/@types/uuid/index.d.ts",
-        "./node_modules/react-hook-form/dist/index.d.ts",
+        "./src/components/form/index.tsx",
         "./src/components/notificationcontainer/index.tsx",
-        "./src/store/actions.ts",
-        "./src/store/index.tsx",
-        "./src/style.tsx"
+        "./src/store/index.tsx"
       ],
       "./src/react-app-env.d.ts": [
         "./node_modules/react-scripts/lib/react-app.d.ts"
@@ -5716,7 +5740,7 @@
       "./src/store/actions.ts": [
         "./node_modules/@types/react/jsx-runtime.d.ts",
         "./node_modules/typesafe-actions/dist/index.d.ts",
-        "./src/store/index.tsx"
+        "./src/store/types.ts"
       ],
       "./src/store/index.tsx": [
         "./node_modules/@types/react-redux/index.d.ts",
@@ -5727,7 +5751,8 @@
         "./node_modules/redux/index.d.ts",
         "./node_modules/typesafe-actions/dist/index.d.ts",
         "./src/store/actions.ts",
-        "./src/store/rootsaga.ts"
+        "./src/store/rootsaga.ts",
+        "./src/store/types.ts"
       ],
       "./src/store/rootsaga.ts": [
         "./node_modules/@redux-saga/core/types/ts3.6/effects.d.ts",
@@ -5741,9 +5766,8 @@
         "./node_modules/@types/react/jsx-runtime.d.ts",
         "./src/store/actions.ts"
       ],
-      "./src/style.tsx": [
-        "./node_modules/@types/react/jsx-runtime.d.ts",
-        "./node_modules/@types/styled-components/index.d.ts"
+      "./src/store/types.ts": [
+        "./node_modules/@types/react/jsx-runtime.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -8159,6 +8183,9 @@
       "./node_modules/typescript-tuple/lib/utils.d.ts": [
         "./node_modules/typescript-compare/index.d.ts"
       ],
+      "./src/components/form/style.ts": [
+        "./node_modules/@types/styled-components/index.d.ts"
+      ],
       "./src/components/notificationcontainer/style.tsx": [
         "./node_modules/@types/react/index.d.ts",
         "./node_modules/@types/styled-components/index.d.ts"
@@ -8168,13 +8195,14 @@
       ],
       "./src/store/actions.ts": [
         "./node_modules/typesafe-actions/dist/index.d.ts",
-        "./src/store/index.tsx"
+        "./src/store/types.ts"
       ],
       "./src/store/index.tsx": [
         "./node_modules/@types/react-redux/index.d.ts",
         "./node_modules/redux/index.d.ts",
         "./node_modules/typesafe-actions/dist/index.d.ts",
-        "./src/store/actions.ts"
+        "./src/store/actions.ts",
+        "./src/store/types.ts"
       ],
       "./src/store/rootsaga.ts": [
         "./node_modules/@redux-saga/core/types/ts3.6/effects.d.ts"
@@ -8182,10 +8210,7 @@
       "./src/store/saga.js": [
         "./node_modules/@redux-saga/core/types/ts3.6/effects.d.ts",
         "./node_modules/typesafe-actions/dist/index.d.ts",
-        "./src/store/index.tsx"
-      ],
-      "./src/style.tsx": [
-        "./node_modules/@types/styled-components/index.d.ts"
+        "./src/store/types.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -8828,6 +8853,8 @@
       "./node_modules/typescript/lib/lib.esnext.promise.d.ts",
       "./node_modules/typescript/lib/lib.esnext.string.d.ts",
       "./node_modules/typescript/lib/lib.esnext.weakref.d.ts",
+      "./src/components/form/index.tsx",
+      "./src/components/form/style.ts",
       "./src/components/notificationcontainer/index.tsx",
       "./src/components/notificationcontainer/style.tsx",
       "./src/index.tsx",
@@ -8836,7 +8863,7 @@
       "./src/store/index.tsx",
       "./src/store/rootsaga.ts",
       "./src/store/saga.js",
-      "./src/style.tsx"
+      "./src/store/types.ts"
     ],
     "affectedFilesPendingEmit": [
       [
@@ -11428,6 +11455,14 @@
         1
       ],
       [
+        "./src/components/form/index.tsx",
+        1
+      ],
+      [
+        "./src/components/form/style.ts",
+        1
+      ],
+      [
         "./src/components/notificationcontainer/container.tsx",
         1
       ],
@@ -11461,6 +11496,10 @@
       ],
       [
         "./src/store/saga.js",
+        1
+      ],
+      [
+        "./src/store/types.ts",
         1
       ],
       [

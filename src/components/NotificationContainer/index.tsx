@@ -2,11 +2,12 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
-import { Alert, AlertTitle } from "@material-ui/lab";
-import { AlertPosition, useTypedSelector } from "../../store";
+import { Alert, AlertTitle, Color } from "@material-ui/lab";
+import { useTypedSelector } from "../../store";
 import { actions } from "../../store/actions";
 import { AlertBoxLeft, AlertBoxRight, AlertWrapper } from "./style";
 import { useTransition } from "react-spring";
+import { AlertPosition } from "../../store/types";
 
 export const NotificationContainer = () => {
   const dispatch = useDispatch();
@@ -29,6 +30,7 @@ export const NotificationContainer = () => {
               <Alert
                 id={item.id}
                 variant="filled"
+                severity={item.type as Color}
                 action={
                   item.dismissible ? (
                     <IconButton
@@ -57,6 +59,7 @@ export const NotificationContainer = () => {
               <Alert
                 id={item.id}
                 variant="filled"
+                severity={item.type as Color}
                 action={
                   item.dismissible ? (
                     <IconButton

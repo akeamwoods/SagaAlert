@@ -1,5 +1,5 @@
 import { ActionType, createAction } from "typesafe-actions";
-import { Alert } from ".";
+import { Alert } from "./types";
 
 const alertCreated = createAction("alert created")<Alert>();
 const alertDisplayed = createAction("alert displayed")<Alert>();
