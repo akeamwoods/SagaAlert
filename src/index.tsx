@@ -1,126 +1,235 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./style.css";
 import { render } from "react-dom";
 import { Provider, useDispatch } from "react-redux";
 import { store } from "./store";
 import { AlertPosition } from "./store/index";
 import { actions } from "./store/actions";
-import { NotificationContainer } from "./components/alert/container";
-import uuid from "uuid";
-import { Form, FormWrapper } from "./style";
+import { v4 as uuid } from "uuid";
+import { Form } from "./style";
+import { NotificationContainer } from "./components/NotificationContainer";
+import {
+  Button,
+  Checkbox,
+  FormControl,
+  FormControlLabel,
+  FormLabel,
+  MenuItem,
+  Select,
+  TextField,
+  FormHelperText,
+  Box,
+  Typography,
+} from "@material-ui/core";
+import { Controller, useForm } from "react-hook-form";
+
+type Inputs = {
+  title: string;
+  message: string;
+  dismissible: boolean;
+  durationAllowed: boolean;
+  duration: number;
+  position: number;
+};
 
 function App() {
   const dispatch = useDispatch();
   const positions = Object.keys(AlertPosition).filter(
-    value => !isNaN(Number(value))
+    (value) => !isNaN(Number(value))
   );
-
-  const [title, setTitle] = useState("");
-  const [message, setMessage] = useState("");
-  const [durationAllowed, setDurationAllowed] = useState(true);
-  const [duration, setDuration] = useState(0);
-  const [dismissible, setDismissible] = useState(true);
-  const [position, setIndex] = useState(0);
-
-  useEffect(() => {
-    setTitle("Title");
-    setMessage("Message");
-    setDurationAllowed(true);
-    setDuration(5000);
-    setDismissible(true);
-    setIndex(0);
-  }, []);
-
-  const onSubmit = () => {
-    if (durationAllowed || dismissible) {
+  const { control, handleSubmit, watch } = useForm<Inputs>({
+    defaultValues: {
+      title: "Welcome!",
+      message: "Thanks for checking out my project.",
+      dismissible: true,
+      durationAllowed: false,
+      duration: 5000,
+      position: 0,
+    },
+  });
+  const onSubmit = (data: Inputs) => {
+    if (data.durationAllowed || data.dismissible) {
       dispatch(
         actions.alertCreated({
-          id: uuid.v4(),
-          title,
-          message,
-          duration: durationAllowed ? duration : undefined,
-          dismissible,
-          position
+          id: uuid(),
+          title: data.title,
+          message: data.message,
+          duration: data.durationAllowed ? data.duration : undefined,
+          dismissible: data.dismissible,
+          position: data.position,
         })
       );
-    } else {
-      // validation here (need either a set duration or dissmissible);
     }
   };
 
   return (
     <div className="App">
-      <NotificationContainer />
-      <FormWrapper>
-        <Form>
-          <span className="first">
-            <label>Title</label>
-            <input
-              value={title}
-              onChange={e => setTitle(e.target.value)}
-            ></input>
-          </span>
-          <span className="second">
-            <label>Message</label>
-            <input
-              value={message}
-              onChange={e => setMessage(e.target.value)}
-            ></input>
-          </span>
-          <span className="third">
-            <span>
-              <label>Expires?</label>
-              <input
-                checked={durationAllowed}
-                onChange={() => setDurationAllowed(!durationAllowed)}
-                type="checkbox"
-              ></input>
-            </span>
-            <span>
-              <label>Dismissible?</label>
-              <input
-                checked={dismissible}
-                onChange={() => setDismissible(!dismissible)}
-                type="checkbox"
-              ></input>
-            </span>
-          </span>
-          <span className="fourth">
-            <label>Duration (ms)</label>
-            <input
-              disabled={!durationAllowed}
-              value={duration}
-              onChange={e => setDuration(Number(e.target.value))}
-              type="number"
-            ></input>
-          </span>
-          <span className="fifth">
-            <label>Position</label>
-            <select
-              value={positions[position]}
-              onChange={e => setIndex(e.target.selectedIndex)}
-            >
-              {positions.map(key => (
-                <option value={key}>{AlertPosition[key as any]}</option>
-              ))}
-            </select>
-          </span>
-          {!durationAllowed && !dismissible && (
-            <span className="sixth">
-              <p>Expires or Dismissible must be allowed.</p>
-            </span>
-          )}
-          <label></label>
-
-          <button
-            type="button"
-            onClick={onSubmit}
-            disabled={!durationAllowed && !dismissible}
+      <Box
+        display="flex"
+        // justifyContent="center"
+        alignItems="center"
+        minHeight="100vh"
+        flexDirection="column"
+      >
+        <NotificationContainer />
+        <Box margin="20px">
+          <Typography variant="h3" align="center" component="h1" gutterBottom>
+            SagaAlert
+          </Typography>
+          <Typography paragraph gutterBottom>
+            This project highlights how easy it is to create a notification
+            system using Redux Saga.
+          </Typography>
+        </Box>
+        <Form onSubmit={handleSubmit(onSubmit)} style={{ background: "#fff" }}>
+          <FormControl margin="normal">
+            <FormLabel style={{ marginBottom: "4px", fontSize: "14px" }}>
+              Title
+            </FormLabel>
+            <Controller
+              name="title"
+              control={control}
+              defaultValue=""
+              render={({ onChange, value }) => (
+                <TextField
+                  placeholder="Placeholder"
+                  fullWidth
+                  onChange={onChange}
+                  value={value}
+                  InputLabelProps={{
+                    shrink: true,
+                  }}
+                />
+              )}
+            />
+          </FormControl>
+          <FormControl margin="normal">
+            <FormLabel style={{ marginBottom: "4px", fontSize: "14px" }}>
+              Message
+            </FormLabel>
+            <Controller
+              name="message"
+              control={control}
+              defaultValue=""
+              render={({ onChange, value }) => (
+                <TextField
+                  placeholder="Placeholder"
+                  fullWidth
+                  onChange={onChange}
+                  value={value}
+                  InputLabelProps={{
+                    shrink: true,
+                  }}
+                />
+              )}
+            />
+          </FormControl>
+          <FormControl
+            margin="normal"
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              flexDirection: "row",
+            }}
           >
-            Create
-          </button>
+            <FormControlLabel
+              control={
+                <Controller
+                  name="durationAllowed"
+                  control={control}
+                  render={(props) => (
+                    <Checkbox
+                      {...props}
+                      color="primary"
+                      checked={props.value}
+                      onChange={(e) => props.onChange(e.target.checked)}
+                    />
+                  )}
+                />
+              }
+              label="Duration?"
+            />
+            <FormControlLabel
+              control={
+                <Controller
+                  name="dismissible"
+                  control={control}
+                  render={(props) => (
+                    <Checkbox
+                      {...props}
+                      color="secondary"
+                      checked={props.value}
+                      onChange={(e) => props.onChange(e.target.checked)}
+                    />
+                  )}
+                />
+              }
+              label="Dismissible?"
+            />
+          </FormControl>
+          {!watch("durationAllowed") && !watch("dismissible") && (
+            <FormHelperText>
+              Expires or Dismissible must be allowed
+            </FormHelperText>
+          )}
+          <FormControl margin="normal">
+            <FormLabel style={{ marginBottom: "4px", fontSize: "14px" }}>
+              Duration
+            </FormLabel>
+            <Controller
+              name="duration"
+              control={control}
+              defaultValue=""
+              render={({ onChange, value }) => (
+                <TextField
+                  placeholder="Placeholder"
+                  fullWidth
+                  type="number"
+                  onChange={onChange}
+                  disabled={!watch("duration")}
+                  value={value}
+                  InputLabelProps={{
+                    shrink: true,
+                  }}
+                />
+              )}
+            />
+          </FormControl>
+          <FormControl margin="normal">
+            <FormLabel style={{ marginBottom: "4px", fontSize: "14px" }}>
+              Position
+            </FormLabel>
+            <Controller
+              name="position"
+              control={control}
+              render={({ onChange, value }) => (
+                <Select
+                  variant="outlined"
+                  value={positions[value]}
+                  onChange={onChange}
+                >
+                  {positions.map((key, index) => (
+                    <MenuItem key={key} value={index}>
+                      {AlertPosition[key as any]}
+                    </MenuItem>
+                  ))}
+                </Select>
+              )}
+            />
+          </FormControl>
+          <FormControl margin="normal">
+            <Button
+              fullWidth
+              color="primary"
+              variant="contained"
+              type="submit"
+              disabled={!watch("duration") && !watch("dismissible")}
+            >
+              Create
+            </Button>
+          </FormControl>
         </Form>
-      </FormWrapper>
+      </Box>
     </div>
   );
 }
