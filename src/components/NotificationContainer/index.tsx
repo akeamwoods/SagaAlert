@@ -5,8 +5,8 @@ import CloseIcon from "@material-ui/icons/Close";
 import { Alert, AlertTitle } from "@material-ui/lab";
 import { AlertPosition, useTypedSelector } from "../../store";
 import { actions } from "../../store/actions";
-import { AlertBoxLeft, AlertBoxRight } from "./style";
-import { useTransition, animated } from "react-spring";
+import { AlertBoxLeft, AlertBoxRight, AlertWrapper } from "./style";
+import { useTransition } from "react-spring";
 
 export const NotificationContainer = () => {
   const dispatch = useDispatch();
@@ -25,9 +25,10 @@ export const NotificationContainer = () => {
         {transition
           .filter((e) => e.item.position === AlertPosition.Left)
           .map(({ item, props, key }) => (
-            <animated.div style={props} key={key}>
+            <AlertWrapper style={props} key={key}>
               <Alert
                 id={item.id}
+                variant="filled"
                 action={
                   item.dismissible ? (
                     <IconButton
@@ -45,17 +46,17 @@ export const NotificationContainer = () => {
                 <AlertTitle>{item.title}</AlertTitle>
                 {item.message}
               </Alert>
-            </animated.div>
+            </AlertWrapper>
           ))}
       </AlertBoxLeft>
       <AlertBoxRight>
         {transition
           .filter((e) => e.item.position === AlertPosition.Right)
           .map(({ item, props, key }) => (
-            <animated.div style={props} key={key}>
+            <AlertWrapper style={props} key={key}>
               <Alert
                 id={item.id}
-                key={item.id}
+                variant="filled"
                 action={
                   item.dismissible ? (
                     <IconButton
@@ -73,7 +74,7 @@ export const NotificationContainer = () => {
                 <AlertTitle>{item.title}</AlertTitle>
                 {item.message}
               </Alert>
-            </animated.div>
+            </AlertWrapper>
           ))}
       </AlertBoxRight>
     </>

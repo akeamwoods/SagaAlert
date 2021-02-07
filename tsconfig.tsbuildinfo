@@ -2551,11 +2551,6 @@
         "signature": "4bf7edd52156baed67e227b7a669af33d5e28db059dd01347f56edf0249dd27f",
         "affectsGlobalScope": false
       },
-      "./src/components/notificationcontainer/style.tsx": {
-        "version": "b71c383bdfd6c61e837188655fabcbdeb4eee6e7c55c7027a42e186b30df40da",
-        "signature": "6db60728e9936c158323d6379985d4cd884509817cdbbcec1bec88b726194cd4",
-        "affectsGlobalScope": false
-      },
       "./node_modules/react-spring/renderprops-universal.d.ts": {
         "version": "fc47ab9db3b65223b5020522ae471428a1de379444ebfcd7c9e06719b7fc0b7b",
         "signature": "fc47ab9db3b65223b5020522ae471428a1de379444ebfcd7c9e06719b7fc0b7b",
@@ -2576,8 +2571,13 @@
         "signature": "8495145c6afd64cb28edaf0b5e1e31db8d2f593a5f8dd64cae0878ee6d1db307",
         "affectsGlobalScope": false
       },
+      "./src/components/notificationcontainer/style.tsx": {
+        "version": "a001837aba44e292ad99084df93979446f0d532d16e4a12144413aded60ea549",
+        "signature": "d0317fd95144e8209ae78c34fb3400f7ab125739c75439639d408c8eca58335b",
+        "affectsGlobalScope": false
+      },
       "./src/components/notificationcontainer/index.tsx": {
-        "version": "c36ee86469881fba2370dd2a70590534d3ab3c3cccc7616ca6af963e1d885762",
+        "version": "09bf6e81b77892f4ba7e0800c21dcff7ae38be4493faab89104b3da18d1db154",
         "signature": "7e3d06fcc233df553d9490508cab5f6a71e851e27b4b21d3daf1c9479f97fe69",
         "affectsGlobalScope": false
       },
@@ -5693,7 +5693,8 @@
       ],
       "./src/components/notificationcontainer/style.tsx": [
         "./node_modules/@types/react/jsx-runtime.d.ts",
-        "./node_modules/@types/styled-components/index.d.ts"
+        "./node_modules/@types/styled-components/index.d.ts",
+        "./node_modules/react-spring/web.cjs.d.ts"
       ],
       "./src/index.tsx": [
         "./node_modules/@material-ui/core/index.d.ts",
@@ -8159,6 +8160,7 @@
         "./node_modules/typescript-compare/index.d.ts"
       ],
       "./src/components/notificationcontainer/style.tsx": [
+        "./node_modules/@types/react/index.d.ts",
         "./node_modules/@types/styled-components/index.d.ts"
       ],
       "./src/react-app-env.d.ts": [
