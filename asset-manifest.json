@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/SagaAlert/static/css/main.05cf8270.chunk.css",
-    "main.js": "/SagaAlert/static/js/main.5d5c4749.chunk.js",
-    "main.js.map": "/SagaAlert/static/js/main.5d5c4749.chunk.js.map",
+    "main.js": "/SagaAlert/static/js/main.de01eca5.chunk.js",
+    "main.js.map": "/SagaAlert/static/js/main.de01eca5.chunk.js.map",
     "runtime-main.js": "/SagaAlert/static/js/runtime-main.6ff404d3.js",
     "runtime-main.js.map": "/SagaAlert/static/js/runtime-main.6ff404d3.js.map",
-    "static/js/2.6fb5d325.chunk.js": "/SagaAlert/static/js/2.6fb5d325.chunk.js",
-    "static/js/2.6fb5d325.chunk.js.map": "/SagaAlert/static/js/2.6fb5d325.chunk.js.map",
+    "static/js/2.b1ad36e8.chunk.js": "/SagaAlert/static/js/2.b1ad36e8.chunk.js",
+    "static/js/2.b1ad36e8.chunk.js.map": "/SagaAlert/static/js/2.b1ad36e8.chunk.js.map",
     "index.html": "/SagaAlert/index.html",
     "static/css/main.05cf8270.chunk.css.map": "/SagaAlert/static/css/main.05cf8270.chunk.css.map",
-    "static/js/2.6fb5d325.chunk.js.LICENSE.txt": "/SagaAlert/static/js/2.6fb5d325.chunk.js.LICENSE.txt"
+    "static/js/2.b1ad36e8.chunk.js.LICENSE.txt": "/SagaAlert/static/js/2.b1ad36e8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6ff404d3.js",
-    "static/js/2.6fb5d325.chunk.js",
+    "static/js/2.b1ad36e8.chunk.js",
     "static/css/main.05cf8270.chunk.css",
-    "static/js/main.5d5c4749.chunk.js"
+    "static/js/main.de01eca5.chunk.js"
   ]
 }
