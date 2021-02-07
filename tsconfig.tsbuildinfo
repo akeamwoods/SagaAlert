@@ -483,7 +483,7 @@
       },
       "./src/store/saga.js": {
         "version": "326d08296fde41c056a8cb12a3d91c51ad27e8c6783e4b4c92b5586d54900864",
-        "signature": "cc1931556efdbed08bfed81db795fb2edc0e2dc27134b5422570944c6a7657c6",
+        "signature": "0fac59be4bf8d2821179e52f75298c5412c755cb2e367b4dc78d13205d166d73",
         "affectsGlobalScope": false
       },
       "./src/store/rootsaga.ts": {
@@ -2691,6 +2691,66 @@
         "signature": "927af711ffc28e1b03e5183a90b6a8266e79950504a4d94cc3c58c3c4256422a",
         "affectsGlobalScope": false
       },
+      "./node_modules/@types/anymatch/index.d.ts": {
+        "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
+        "signature": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/aria-query/index.d.ts": {
+        "version": "e51e34b4d8bd97569a7101c1b77234f6a1272cbb5bd50ed649b1da3f71070300",
+        "signature": "e51e34b4d8bd97569a7101c1b77234f6a1272cbb5bd50ed649b1da3f71070300",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@babel/types/lib/index.d.ts": {
+        "version": "7c6b4c3bbc2c3cebe5cc1364e84a4fd0cbda5fda186c0ba15c2f693f403479d2",
+        "signature": "7c6b4c3bbc2c3cebe5cc1364e84a4fd0cbda5fda186c0ba15c2f693f403479d2",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__generator/index.d.ts": {
+        "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "signature": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__traverse/index.d.ts": {
+        "version": "8a278bfba7b081cd849434c1130655046639ae90617a682436ed6954e2b57403",
+        "signature": "8a278bfba7b081cd849434c1130655046639ae90617a682436ed6954e2b57403",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@babel/parser/typings/babel-parser.d.ts": {
+        "version": "6da9e714516d081abaa435946d77c8d74dba888530412dc71601e83d2c8a512e",
+        "signature": "6da9e714516d081abaa435946d77c8d74dba888530412dc71601e83d2c8a512e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__template/index.d.ts": {
+        "version": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
+        "signature": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__core/index.d.ts": {
+        "version": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
+        "signature": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/eslint/helpers.d.ts": {
+        "version": "f345b0888d003fd69cb32bad3a0aa04c615ccafc572019e4bd86a52bd5e49e46",
+        "signature": "f345b0888d003fd69cb32bad3a0aa04c615ccafc572019e4bd86a52bd5e49e46",
+        "affectsGlobalScope": true
+      },
+      "./node_modules/@types/json-schema/index.d.ts": {
+        "version": "3a1e165b22a1cb8df82c44c9a09502fd2b33f160cd277de2cd3a055d8e5c6b27",
+        "signature": "3a1e165b22a1cb8df82c44c9a09502fd2b33f160cd277de2cd3a055d8e5c6b27",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/estree/index.d.ts": {
+        "version": "745a853d60bf782583a58584f59e202cae5c7a898b0c92696442602a3ef17a87",
+        "signature": "745a853d60bf782583a58584f59e202cae5c7a898b0c92696442602a3ef17a87",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/eslint/index.d.ts": {
+        "version": "edb3e2f61a2a6e29a5f9043f73adf65951d52b4c1f22e84050381f7ef0d77318",
+        "signature": "edb3e2f61a2a6e29a5f9043f73adf65951d52b4c1f22e84050381f7ef0d77318",
+        "affectsGlobalScope": false
+      },
       "./node_modules/@types/node/globals.d.ts": {
         "version": "215d8d9a2c480fd460127edc048d68d9931d3b27f95132253a6e71975f060bb1",
         "signature": "215d8d9a2c480fd460127edc048d68d9931d3b27f95132253a6e71975f060bb1",
@@ -2924,76 +2984,6 @@
       "./node_modules/@types/node/index.d.ts": {
         "version": "744e6430bafc6f39f66c4fc1e6a0d8c9551260ffd1782aa7e3f5166ac6aa1f86",
         "signature": "744e6430bafc6f39f66c4fc1e6a0d8c9551260ffd1782aa7e3f5166ac6aa1f86",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/react-scripts/lib/react-app.d.ts": {
-        "version": "9c52d1e0414faa6ee331024f249f9c1ab11a5c432c37370c2c74ba933aee25fc",
-        "signature": "9c52d1e0414faa6ee331024f249f9c1ab11a5c432c37370c2c74ba933aee25fc",
-        "affectsGlobalScope": true
-      },
-      "./src/react-app-env.d.ts": {
-        "version": "57eda4c4c04a1dca45c62857326882ce9cc948c4b52973c0e3c3b7e4c3fa3990",
-        "signature": "57eda4c4c04a1dca45c62857326882ce9cc948c4b52973c0e3c3b7e4c3fa3990",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/anymatch/index.d.ts": {
-        "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
-        "signature": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/aria-query/index.d.ts": {
-        "version": "e51e34b4d8bd97569a7101c1b77234f6a1272cbb5bd50ed649b1da3f71070300",
-        "signature": "e51e34b4d8bd97569a7101c1b77234f6a1272cbb5bd50ed649b1da3f71070300",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@babel/types/lib/index.d.ts": {
-        "version": "7c6b4c3bbc2c3cebe5cc1364e84a4fd0cbda5fda186c0ba15c2f693f403479d2",
-        "signature": "7c6b4c3bbc2c3cebe5cc1364e84a4fd0cbda5fda186c0ba15c2f693f403479d2",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/babel__generator/index.d.ts": {
-        "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
-        "signature": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/babel__traverse/index.d.ts": {
-        "version": "8a278bfba7b081cd849434c1130655046639ae90617a682436ed6954e2b57403",
-        "signature": "8a278bfba7b081cd849434c1130655046639ae90617a682436ed6954e2b57403",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@babel/parser/typings/babel-parser.d.ts": {
-        "version": "6da9e714516d081abaa435946d77c8d74dba888530412dc71601e83d2c8a512e",
-        "signature": "6da9e714516d081abaa435946d77c8d74dba888530412dc71601e83d2c8a512e",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/babel__template/index.d.ts": {
-        "version": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
-        "signature": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/babel__core/index.d.ts": {
-        "version": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
-        "signature": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/eslint/helpers.d.ts": {
-        "version": "f345b0888d003fd69cb32bad3a0aa04c615ccafc572019e4bd86a52bd5e49e46",
-        "signature": "f345b0888d003fd69cb32bad3a0aa04c615ccafc572019e4bd86a52bd5e49e46",
-        "affectsGlobalScope": true
-      },
-      "./node_modules/@types/json-schema/index.d.ts": {
-        "version": "3a1e165b22a1cb8df82c44c9a09502fd2b33f160cd277de2cd3a055d8e5c6b27",
-        "signature": "3a1e165b22a1cb8df82c44c9a09502fd2b33f160cd277de2cd3a055d8e5c6b27",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/estree/index.d.ts": {
-        "version": "745a853d60bf782583a58584f59e202cae5c7a898b0c92696442602a3ef17a87",
-        "signature": "745a853d60bf782583a58584f59e202cae5c7a898b0c92696442602a3ef17a87",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/eslint/index.d.ts": {
-        "version": "edb3e2f61a2a6e29a5f9043f73adf65951d52b4c1f22e84050381f7ef0d77318",
-        "signature": "edb3e2f61a2a6e29a5f9043f73adf65951d52b4c1f22e84050381f7ef0d77318",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/minimatch/index.d.ts": {
@@ -5583,11 +5573,6 @@
       "./node_modules/react-hook-form/dist/utils/index.d.ts": [
         "./node_modules/react-hook-form/dist/utils/get.d.ts"
       ],
-      "./node_modules/react-scripts/lib/react-app.d.ts": [
-        "./node_modules/@types/node/index.d.ts",
-        "./node_modules/@types/react-dom/index.d.ts",
-        "./node_modules/@types/react/index.d.ts"
-      ],
       "./node_modules/react-spring/renderprops-universal.d.ts": [
         "./node_modules/@types/react/index.d.ts"
       ],
@@ -5699,9 +5684,6 @@
         "./src/store/actions.ts",
         "./src/store/index.tsx",
         "./src/style.tsx"
-      ],
-      "./src/react-app-env.d.ts": [
-        "./node_modules/react-scripts/lib/react-app.d.ts"
       ],
       "./src/store/actions.ts": [
         "./node_modules/@types/react/jsx-runtime.d.ts",
@@ -8058,11 +8040,6 @@
       "./node_modules/react-hook-form/dist/utils/index.d.ts": [
         "./node_modules/react-hook-form/dist/utils/get.d.ts"
       ],
-      "./node_modules/react-scripts/lib/react-app.d.ts": [
-        "./node_modules/@types/node/index.d.ts",
-        "./node_modules/@types/react-dom/index.d.ts",
-        "./node_modules/@types/react/index.d.ts"
-      ],
       "./node_modules/react-spring/renderprops-universal.d.ts": [
         "./node_modules/@types/react/index.d.ts"
       ],
@@ -8148,9 +8125,6 @@
       ],
       "./src/components/notificationcontainer/style.tsx": [
         "./node_modules/@types/styled-components/index.d.ts"
-      ],
-      "./src/react-app-env.d.ts": [
-        "./node_modules/react-scripts/lib/react-app.d.ts"
       ],
       "./src/store/actions.ts": [
         "./node_modules/typesafe-actions/dist/index.d.ts",
@@ -8740,7 +8714,6 @@
       "./node_modules/react-hook-form/dist/usewatch.d.ts",
       "./node_modules/react-hook-form/dist/utils/get.d.ts",
       "./node_modules/react-hook-form/dist/utils/index.d.ts",
-      "./node_modules/react-scripts/lib/react-app.d.ts",
       "./node_modules/react-spring/renderprops-universal.d.ts",
       "./node_modules/react-spring/renderprops.d.ts",
       "./node_modules/react-spring/web.cjs.d.ts",
@@ -8816,7 +8789,6 @@
       "./src/components/notificationcontainer/index.tsx",
       "./src/components/notificationcontainer/style.tsx",
       "./src/index.tsx",
-      "./src/react-app-env.d.ts",
       "./src/store/actions.ts",
       "./src/store/index.tsx",
       "./src/store/rootsaga.ts",
