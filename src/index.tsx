@@ -24,8 +24,8 @@ function App() {
             SagaAlert
           </Typography>
           <Typography paragraph gutterBottom>
-            This project highlights how easy it is to create a notification
-            system using Redux Saga.
+            This project highlights a notification system implemented using
+            Redux Saga.
           </Typography>
         </Box>
         <AlertForm />
