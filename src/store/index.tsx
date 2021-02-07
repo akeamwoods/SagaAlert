@@ -8,8 +8,8 @@ import { getType } from "typesafe-actions";
 import { rootSaga } from "./rootSaga";
 
 export enum AlertPosition {
-  right = 0,
-  left = 1
+  Right = 0,
+  Left = 1,
 }
 export type Alert = {
   id: string;
@@ -21,12 +21,7 @@ export type Alert = {
 };
 
 const initialState = () => ({
-  title: "",
-  message: "",
-  duration: undefined as undefined | number,
-  dismissible: true,
-  position: AlertPosition.right as AlertPosition,
-  alerts: [] as Alert[]
+  alerts: [] as Alert[],
 });
 
 export type State = Readonly<ReturnType<typeof initialState>>;
@@ -35,14 +30,14 @@ export const rootReducer: Reducer<State, Actions> = (
   state = initialState(),
   action: Actions
 ) =>
-  produce(state, draft => {
+  produce(state, (draft) => {
     switch (action.type) {
       case getType(actions.alertDisplayed):
         draft.alerts = [...draft.alerts, action.payload];
         break;
       case getType(actions.alertCleared):
         draft.alerts = draft.alerts.filter(
-          alert => alert.id !== action.payload
+          (alert) => alert.id !== action.payload
         );
         break;
     }
